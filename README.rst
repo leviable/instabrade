@@ -2,7 +2,7 @@
 Instabrade
 ========
 
-|PyPIVersion| |TravisCI| |CoverageStatus| |CodeHealth| |StoriesInReady| |PythonVersions| |Gitter|
+|PyPIVersion| |TravisCI| |CoverageStatus| |CodeHealth| |PythonVersions| |Gitter|
 
 Selenium based Instagram scraper
 
@@ -14,8 +14,6 @@ Note that is project is currently in alpha: APIs can and will change without war
    :target: https://coveralls.io/github/levi-rs/instabrade
 .. |CodeHealth| image:: https://landscape.io/github/levi-rs/instabrade/master/landscape.svg?style=flat
    :target: https://landscape.io/github/levi-rs/instabrade/master
-.. |StoriesInReady| image:: https://badge.waffle.io/levi-rs/instabrade.svg?label=ready&title=Ready
-   :target: http://waffle.io/levi-rs/instabrade
 .. |PyPIVersion| image:: https://badge.fury.io/py/instabrade.svg
     :target: https://badge.fury.io/py/instabrade
 .. |PythonVersions| image:: https://img.shields.io/pypi/pyversions/instabrade.svg
