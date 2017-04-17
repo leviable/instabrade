@@ -16,9 +16,6 @@ LOG_IN_IDENTIFIER = PageID(name='Log In Page Identifier',
 HOME_IDENTIFIER = PageID(name='Home Page Identifier',
                          css_path='main[role="main"] > section a[href$="explore/"]',
                          attr='href',
-                         attr_value='https://www.instagram.com/explore/')
-
-
-
+                         attr_value='/explore/')
 
 from instabrade.instagram import Instagram  # noqa
