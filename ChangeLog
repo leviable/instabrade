@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+0.0.3
+-----
+
+* Fix README formatting
+
+0.0.2
+-----
+
+* Add page validation functionality
 * Update Instagram and add landing and base pages
 * Remove Waffle badge
 * Update PyPI password hash
