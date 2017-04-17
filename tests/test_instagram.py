@@ -3,8 +3,8 @@ try:
 except ImportError:
     from unittest import mock
 
-from instabrade import Instagram
-from instabrade.landing_page import LandingPage
+from instabrade import Instagram, PageID
+from instabrade.log_in_page import LogInPage
 
 
 def test___init__(driver):
@@ -15,7 +15,9 @@ def test___init__(driver):
     assert mock.call.get('http://www.instagram.com') in driver.method_calls
 
     # Validate pages are instantiated
-    assert isinstance(ig.landing_page, LandingPage)
+    assert isinstance(ig.log_in_page, LogInPage)
+    assert hasattr(ig.log_in_page, 'PAGE_IDENTIFIER')
+    assert isinstance(ig.log_in_page.PAGE_IDENTIFIER, PageID)
 
 
 def test___init___no_default(driver):

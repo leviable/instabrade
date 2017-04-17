@@ -1,4 +1,7 @@
-from instabrade.landing_page import LandingPage
+from __future__ import absolute_import
+
+from instabrade.log_in_page import LogInPage
+from instabrade.home_page import HomePage
 
 
 class Instagram(object):
@@ -14,7 +17,8 @@ class Instagram(object):
             None
         """
         self.driver = driver
-        self.landing_page = LandingPage(self.driver)
+        self.log_in_page = LogInPage(self.driver)
+        self.home_page = HomePage(self.driver)
 
         if load_webpage:
             self.driver.get('http://www.instagram.com')
