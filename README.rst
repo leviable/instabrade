@@ -1,6 +1,6 @@
 
 Instabrade
-========
+==========
 
 |PyPIVersion| |TravisCI| |CoverageStatus| |CodeHealth| |PythonVersions| |Gitter|
 
