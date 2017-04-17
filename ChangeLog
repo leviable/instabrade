@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+* Update Instagram and add landing and base pages
+* Remove Waffle badge
+* Update PyPI password hash
+* Use valid email format
+
+0.0.1
+-----
+
 * Various structural additions
 * Initial package structure
 
