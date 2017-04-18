@@ -41,7 +41,7 @@ Example usage:
 
     from selenium import webdriver
 
-    from instabrde import Instagram
+    from instabrade import Instagram
 
     my_username = "my username"
     my_password = "my password"
@@ -108,6 +108,9 @@ thrown:
         67
         68     @property
 
-    WrongPageError: Wrong page loaded. Expected PageID(name='Log In Page Identifier', css_path='h1.coreSpriteLoggedOutWordmark', attr='class', attr_value='coreSpriteLoggedOutWordmark') but found PageID(name='Home Page Identifier', css_path='main[role="main"] > section a[href$="explore/"]', attr='href', attr_value='/explore/')
+    WrongPageError: Wrong page loaded. Expected
+    PageID(name='Log In Page Identifier', css_path='h1.coreSpriteLoggedOutWordmark', attr='class', attr_value='coreSpriteLoggedOutWordmark')
+    but found
+    PageID(name='Home Page Identifier', css_path='main[role="main"] > section a[href$="explore/"]', attr='href', attr_value='/explore/')
 
     In [10]:

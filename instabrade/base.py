@@ -55,13 +55,13 @@ class InstagramBase():
         try:
             current_page_identifier = self._current_page()
         except TimeoutException:
-            exc_msg = ("Currently on an unknown page. Expected to be on {0} "
-                       "but currently on {1}")
+            exc_msg = ("Currently on an unknown page. Expected to be on\n{0}\n"
+                       "but currently on\n{1}")
             raise WrongPageError(exc_msg.format(self.PAGE_IDENTIFIER,
                                                 self.driver.current_url))
 
         if current_page_identifier is not self.PAGE_IDENTIFIER:
-            exc_msg = "Wrong page loaded. Expected {0} but found {1}"
+            exc_msg = "Wrong page loaded. Expected\n{0}\nbut found\n{1}"
             raise WrongPageError(exc_msg.format(self.PAGE_IDENTIFIER,
                                                 current_page_identifier))
 
