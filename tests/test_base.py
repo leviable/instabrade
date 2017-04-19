@@ -23,7 +23,7 @@ def test_verify_on_page(instagram_full, element):
     attrs = {'class': "coreSpriteLoggedOutWordmark"}
     instagram_full.driver.execute_script.return_value = attrs
 
-    instagram_full.log_in_page.log_in_link_click()
+    instagram_full.log_in_page.log_in_link_click(False)
 
     page_call = mock.call.find_elements_by_css_selector(LOG_IN_IDENTIFIER.css_path)
     assert page_call in instagram_full.driver.method_calls

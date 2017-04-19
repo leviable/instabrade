@@ -26,12 +26,11 @@ Note that is project is currently in alpha: APIs can and will change without war
 Currently support functionality:
 
 - Log into Instagram
+- Handle the mobile app related popups
 
 
 Planned functionality in upcoming release(s):
 
-- Handle the mobile app center screen modal popup
-- Handle the mobile app footer modal popup
 - Return all posts from Home page
 
 
