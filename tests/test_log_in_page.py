@@ -8,16 +8,31 @@ from explicit import XPATH
 from instabrade.log_in_page import (
     LOG_IN_LINK_XPATH,
     LOG_IN_BUTTON_XPATH,
+    LOG_IN_FIELDS_DISPLAYED_XPATH,
 )
 
 
 def test_log_in_link_click(instagram, element):
     """ Verify log in page log_in_link_click method works """
     instagram.driver.find_element.return_value = element
-    instagram.log_in_page.log_in_link_click()
+    instagram.log_in_page.log_in_link_click(False)
 
     assert mock.call.find_element(XPATH, LOG_IN_LINK_XPATH) in instagram.driver.method_calls
     assert mock.call.click() in element.method_calls
+
+
+def test_log_in_link_click_with_wait(instagram, element):
+    """ Verify log in page log_in_link_click method works and waits"""
+    instagram.driver.find_element.return_value = element
+    instagram.driver.find_elements.return_value = (1, 2)
+    instagram.log_in_page.log_in_link_click(True)
+
+    call_1 = mock.call.find_element(XPATH, LOG_IN_LINK_XPATH)
+    assert call_1 in instagram.driver.method_calls
+    assert mock.call.click() in element.method_calls
+
+    call_2 = mock.call.find_elements(XPATH, LOG_IN_FIELDS_DISPLAYED_XPATH)
+    assert call_2 in instagram.driver.method_calls
 
 
 def test_log_in_button_click(instagram, element):

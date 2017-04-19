@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+* Fix typo and improve exception formatting
+
+0.0.4
+-----
+
+* Update README and minor css path tweak
+
 0.0.3
 -----
 
