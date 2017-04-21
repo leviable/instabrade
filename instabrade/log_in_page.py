@@ -67,7 +67,7 @@ class LogInPage(InstagramBase):
         """ Returns the current text in the password field
 
         Returns:
-            bool
+            str
         """
         password_elem = waiter.find_element(self.driver, 'password', by=NAME)
         return password_elem.get_attribute('value')
@@ -84,7 +84,7 @@ class LogInPage(InstagramBase):
         """ Returns the current text in the username field
 
         Returns:
-            bool
+            str
         """
         username_elem = waiter.find_element(self.driver, 'username', by=NAME)
         return username_elem.get_attribute('value')
