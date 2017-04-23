@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* Add scroll_to methods
 * Fix wrong return types in doc strings
 * Switch to deploying with Python 3.6
 
