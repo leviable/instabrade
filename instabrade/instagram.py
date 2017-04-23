@@ -114,3 +114,15 @@ class Instagram(object):
             self.app_store_center_popup_close()
 
             self.app_store_footer_popup_close()
+
+    def scroll_to_bottom(self):
+        """ Scroll to the bottom of the current window """
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+    def scroll_to_center(self):
+        """ Scroll to the center of the current window """
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
+
+    def scroll_to_top(self):
+        """ Scroll to the bottom of the current window """
+        self.driver.execute_script("window.scrollTo(0, 0);")
