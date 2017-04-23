@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+* Fix wrong return types in doc strings
+* Switch to deploying with Python 3.6
+
+0.0.5
+-----
+
+* Add functionality to handle popups
 * Fix typo and improve exception formatting
 
 0.0.4

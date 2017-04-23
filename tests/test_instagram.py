@@ -134,3 +134,27 @@ def test_close_popups_exception(instagram):
 
             with pytest.raises(WebDriverException):
                 instagram.close_popups()
+
+
+def test_scroll_to_bottom(instagram):
+    """ Test the scroll_to_bottom method call """
+    instagram.scroll_to_bottom()
+
+    assert instagram.driver.execute_script.called
+    assert "0, document.body.scrollHeight" in str(instagram.driver.execute_script.call_args)
+
+
+def test_scroll_to_center(instagram):
+    """ Test the scroll_to_center method call """
+    instagram.scroll_to_center()
+
+    assert instagram.driver.execute_script.called
+    assert "0, document.body.scrollHeight/2" in str(instagram.driver.execute_script.call_args)
+
+
+def test_scroll_to_top(instagram):
+    """ Test the scroll_to_top method call """
+    instagram.scroll_to_top()
+
+    assert instagram.driver.execute_script.called
+    assert "scrollTo(0, 0)" in str(instagram.driver.execute_script.call_args)
