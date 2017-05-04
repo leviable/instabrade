@@ -4,6 +4,7 @@ from collections import namedtuple
 
 import pbr.version
 
+
 __version__ = pbr.version.VersionInfo('instabrade').version_string()
 
 PageID = namedtuple("PageID", "name css_path attr attr_value")
