@@ -2,9 +2,9 @@ from __future__ import absolute_import
 
 from collections import namedtuple
 
-import pbr.version
+from pbr.version import VersionInfo
 
-__version__ = pbr.version.VersionInfo('instabrade').version_string()
+__version__ = VersionInfo('instabrade').semantic_version().release_string()
 
 PageID = namedtuple("PageID", "name css_path attr attr_value")
 
