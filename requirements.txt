@@ -1,3 +1,4 @@
 six
+selenium
 pbr>=2.0
 explicit>=0.0.8
