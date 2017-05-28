@@ -1,15 +1,7 @@
 try:
     import mock
 except ImportError:
-    from unittest import mock
-
-from explicit import XPATH
-
-from instabrade.log_in_page import (
-    LOG_IN_LINK_XPATH,
-    LOG_IN_BUTTON_XPATH,
-    LOG_IN_FIELDS_DISPLAYED_XPATH,
-)
+    from unittest import mock  # NOQA
 
 
 def test_post_count(instagram, element):
