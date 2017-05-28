@@ -1,7 +1,15 @@
 CHANGES
 =======
 
-* Add scroll_to methods
+0.0.6
+-----
+
+* Add Selenium to requirements.txt
+* Update how version is determined
+* Testing versioning without tags
+* Update examples with home\_page example
+* Add post\_count property method
+* Add scroll\_to methods
 * Fix wrong return types in doc strings
 * Switch to deploying with Python 3.6
 
